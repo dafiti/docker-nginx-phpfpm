@@ -10,8 +10,8 @@ RUN apt-get update && apt-get -y install wget curl pkg-config make \
     libcurl4-gnutls-dev libxml2-dev libpcre3-dev bzip2 procps
 
 # Register new packages
-RUN echo "deb http://packages.dotdeb.org wheezy-php55 all" >> /etc/apt/sources.list && \
-    echo "deb-src http://packages.dotdeb.org wheezy-php55 all" >> /etc/apt/sources.list && \
+RUN echo "deb http://packages.dotdeb.org wheezy-php56 all" >> /etc/apt/sources.list && \
+    echo "deb-src http://packages.dotdeb.org wheezy-php56 all" >> /etc/apt/sources.list && \
     echo "deb http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list
 
 RUN wget http://www.dotdeb.org/dotdeb.gpg && apt-key add dotdeb.gpg
